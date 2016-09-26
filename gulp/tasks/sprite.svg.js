@@ -24,6 +24,6 @@ module.exports = function() {
           }
         }
       }))
-      .pipe($.gulp.dest('./source/images/all/sprites'))
+      .pipe($.gulp.dest('./source/images/all/designe'))
   })
 };

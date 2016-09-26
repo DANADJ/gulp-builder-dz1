@@ -1,7 +1,16 @@
-extends ../_template
+extends ../_template.pug
 
-block variables
-	- var title = 'Home page'
+block pagestyle
+	link(rel='stylesheet' href='/assets/css/index.css')
 
 block content
-	include ../common/_greating
+	div.wrapper
+		a.btn-link.btn-link__auth
+		section.modal-window
+			div.circle-photo
+				img.circle-photo__img.circle-photo__img--me(src="./assets/img/content/me.jpg")
+			div.person
+				h1.person__name Гордиенко Валентин
+				h4.person__desc Личный сайт web разработчик
+			+social(' block-center')
+			+menu(0)

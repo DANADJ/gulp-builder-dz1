@@ -5,10 +5,13 @@ module.exports = function () {
 		var png = $.gulp.src('./source/images/icons/png/*.png')
 			.pipe($.gp.spritesmith({
 				imgName: 'iconspritepng.png',
-				cssName: '_iconspritepng.scss'
+				imgPath: '../img/designe/iconspritepng.png',
+				cssName: '_iconspritepng.scss',
+				padding: 20,
+				algorithm: 'top-down'
 			}));
-		png.img.pipe($.gulp.dest('./source/images/all/sprites'));
-		png.css.pipe($.gulp.dest('./source/style/common'));
+		png.img.pipe($.gulp.dest('./source/images/all/designe'));
+		png.css.pipe($.gulp.dest('./source/style/_common'));
 		cb();
 	})
 };

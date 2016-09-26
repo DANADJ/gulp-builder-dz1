@@ -1,0 +1,19 @@
+//-Menu social icon
+mixin social(mod)
+	//MENU SOCIAL ICONS
+	ul(class="social" + mod)
+		each val, index in socials
+			li.social__item
+				a.social__link(href=val class="social__link--" + index target="_blank") #{index}
+
+//- Menu navigation
+mixin menu(activePage)
+	// MENU NAVIGATION
+	ul.menu#menu
+		each item in navigation
+			if item.pageNumber != activePage
+				li.menu__item.btn
+					a.btn-link(href=item.pageLink) #{item.pageContent}
+			else
+				li.menu__item.btn
+					a.btn-link.btn-link__active-page(href=item.pageLink) #{item.pageContent}

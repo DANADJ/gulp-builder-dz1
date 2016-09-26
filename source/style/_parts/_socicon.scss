@@ -1,0 +1,53 @@
+@import "_iconspritepng";
+
+.social {
+
+	&__item {
+		display: inline-block;
+		vertical-align: middle;
+
+		&:nth-child(even){
+			margin: 0 24px;
+		}
+	}
+
+	&__link {
+		display: block;
+		margin: 0 auto;
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+
+		&:hover {
+			opacity: 0.7;
+		}
+
+		&:active {
+			opacity: 1;
+		}
+
+		&--vk {
+			@include sprite($vk);
+
+			&:hover {
+				@include sprite($vk-hover);
+			}
+		}
+
+		&--gh {
+			@include sprite($gh);
+
+			&:hover {
+				@include sprite($gh-hover);
+			}
+		}
+
+		&--li {
+			@include sprite($li);
+
+			&:hover {
+				@include sprite($li-hover);
+			}
+		}
+	}
+}

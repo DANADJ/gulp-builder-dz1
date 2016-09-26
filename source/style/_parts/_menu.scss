@@ -1,0 +1,39 @@
+.menu {
+
+	&__item {
+		display: block;
+		float: left;
+		border-left: 2px solid #ffffff;
+
+		&:first-child {
+			border-left: none;
+			width: 40.526316%;
+		}
+
+		&:nth-child(2) {
+			width: 33.421053%;
+		}
+
+		&:nth-child(3) {
+			width: 26.052631%;
+		}
+
+		.btn-link {
+			box-sizing: content-box;
+			padding: 12px 20px;
+			background-color: #0447bc;
+			color: #ffffff;
+			font: 16px/21px robotomedium;
+			text-align: center;
+		}
+	}
+}
+
+.modal-window {
+	.menu {
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+}
