@@ -3,4 +3,18 @@
 	font: 16px/21px robotolight;
 }
 
-.footer__abs .footer__sign { margin-bottom: 40px }
+.footer .footer__sign {
+	background-color: #083c96;
+	margin-bottom: 0;
+	padding: 9px 20px 8px;
+}
+
+.footer__wellcome {
+	.footer__sign {
+		margin-bottom: 40px;
+		background: none;
+		padding: 0;
+	}
+
+
+}

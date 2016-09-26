@@ -56,6 +56,19 @@ ul, ol, li {
 	text-align: center;
 }
 
+/*List*/
+.list {
+
+	&__item {
+
+	}
+}
+
+/*Links*/
+.link {
+	text-decoration: none;
+}
+
 /*Conteiners*/
 .conteiner {
 	position: relative;

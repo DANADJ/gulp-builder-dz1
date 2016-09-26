@@ -17,3 +17,37 @@ mixin menu(activePage)
 			else
 				li.menu__item.btn
 					a.btn-link.btn-link__active-page(href=item.pageLink) #{item.pageContent}
+
+//- Footer
+mixin footer(mod)
+	if mod == ''
+		footer.footer.footer__bg
+			div.conteiner
+				div.footer__main.clearfix
+					div.footer__parts.footer__parts--desc
+						p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
+					div.footer__parts.footer__parts--links
+						ul.list.footer__menu.clearfix
+							li.list__item.footer__menu-item
+								a.link(href="./myworks.html") Мои работы
+							li.list__item.footer__menu-item
+								a.link(href="./aboute.html") Обо мне
+							li.list__item.footer__menu-item
+								a.link(href="./blog.html") Блог
+							li.list__item.footer__menu-item
+								a.link(href="./login.html") Авторизация
+						+social('')
+					div.footer__parts.footer__parts--cont
+						ul.list
+							li.list__item
+								a.link(href="#") danadjsanktpeterburg
+							li.list__item
+								a.link(href="#") danadj@yandex.ru
+							li.list__item
+								a.link(href="#") +7 952 277 59 51
+							li.list__item Россия, г.Санкт-Петербург
+			include ../_parts/_signfooter.pug
+	else
+		footer(class="footer footer__" + mod)
+			div.conteiner
+				include ../_parts/_signfooter.pug

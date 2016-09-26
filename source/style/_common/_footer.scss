@@ -1,5 +1,6 @@
 .empty {
 	position: relative;
+	height: 184px;
 
 	&__wellcome {
 		height: 61px;
@@ -7,10 +8,93 @@
 }
 
 .footer {
-	position: relative;
+	margin-top: -184px;
 	color: #ffffff;
+	opacity: 0.85;
+	font: 16px/21px robotolight;
+
+	&__bg {
+		background-color: #1c1f29;
+	}
+
+	&__main {
+		width: 100%;
+		padding: 30px 0;
+
+		.footer__parts {
+			position: relative;
+			float: left;
+			width: 33.3%;
+			height: 86px;
+			padding: 0 30px;
+			border-left: 1px solid #494b53;
+
+			&:first-child {
+				border-left: none;
+			}
+		}
+	}
 
 	&__wellcome {
 		margin-top: -61px;
+	}
+
+	.link {
+		color: #fff;
+	}
+
+	&__menu {
+
+		margin-bottom: 40px;
+
+		.footer__menu-item {
+			display: block;
+			float: left;
+			padding: 0 18px;
+
+			.link {
+				font-family: robotomedium;
+			}
+
+			&:first-child {
+				padding-left: 0;
+			}
+
+			&:last-child {
+				padding-right: 0;
+			}
+		}
+	}
+
+	.social {
+		margin-bottom: 0;
+
+		&__link {
+
+			&--vk {
+
+				@include sprite($vk-hover);
+
+				&:hover {
+					@include sprite($vk);
+				}
+			}
+
+			&--gh {
+				@include sprite($gh-hover);
+
+				&:hover {
+					@include sprite($gh);
+				}
+			}
+
+			&--li {
+				@include sprite($li-hover);
+
+				&:hover {
+					@include sprite($li);
+				}
+			}
+		}
 	}
 }

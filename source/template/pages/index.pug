@@ -7,7 +7,7 @@ block content
 	div.wrapper
 		section.wellcome
 			div.conteiner.conteiner__wellcome
-				a.btn-link.btn-link__auth(href="#") Авторизоваться
+				a.btn-link.btn-link__auth(href="./login.html") Авторизоваться
 				section.modal-window
 					div.circle-photo
 						img.circle-photo__img.circle-photo__img--me(src="./assets/img/content/me.jpg")
@@ -17,6 +17,6 @@ block content
 					+social(' block-center')
 					+menu(0)
 				div.empty.empty__wellcome
-	footer.footer.footer__wellcome
-		div.conteiner
-			include ../_parts/_signfooter.pug
+
+block footer
+	+footer('wellcome')
