@@ -1,0 +1,16 @@
+.empty {
+	position: relative;
+
+	&__wellcome {
+		height: 61px;
+	}
+}
+
+.footer {
+	position: relative;
+	color: #ffffff;
+
+	&__wellcome {
+		margin-top: -61px;
+	}
+}

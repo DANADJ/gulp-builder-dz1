@@ -20,11 +20,11 @@
 
 		.btn-link {
 			box-sizing: content-box;
-			padding: 12px 20px;
 			background-color: #0447bc;
-			color: #ffffff;
-			font: 16px/21px robotomedium;
-			text-align: center;
+
+			&:hover {
+				background-color: #043ea3;
+			}
 		}
 	}
 }
