@@ -26,6 +26,10 @@
 				background-color: #043ea3;
 			}
 		}
+
+		&:last-child {
+			display: none;
+		}
 	}
 }
 

@@ -1,10 +1,18 @@
-extends ../_template
+extends ../_template.pug
+
+block title
+	title Сайт-портфоли Гордиенко Валентина. Мои работы.
 
 block pagestyle
 	link(rel='stylesheet' href='/assets/css/myworks.css')
 
 block content
-
+	div.wrapper
+		include ../_common/_header.pug
+		include ../_sections/_top.pug
+		include ../_sections/_slider.pug
+		include ../_sections/_reviews.pug
+		div.empty
 
 block footer
 	+footer('')

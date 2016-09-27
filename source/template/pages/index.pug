@@ -1,22 +1,21 @@
 extends ../_template.pug
+block title
+	title Сайт-портфоли Гордиенко Валентина. Страница приветствия.
 
 block pagestyle
 	link(rel='stylesheet' href='/assets/css/index.css')
 
 block content
-	div.wrapper
-		section.wellcome
-			div.conteiner.conteiner__wellcome
-				a.btn-link.btn-link__auth(href="./login.html") Авторизоваться
-				section.modal-window
-					div.circle-photo
-						img.circle-photo__img.circle-photo__img--me(src="./assets/img/content/me.jpg")
-					div.person
-						h1.person__name Гордиенко Валентин
-						h4.person__desc Личный сайт web разработчик
-					+social(' block-center')
-					+menu(0)
-				div.empty.empty__wellcome
+	section.wellcome
+		a.btn-link.btn-link__auth(href="./login.html") Авторизоваться
+		div.modal-window.block-center
+			div.circle-photo
+				img.circle-photo__img.circle-photo__img--me(src="./assets/img/content/me.jpg" alt="Гордиенко Валентин. Сайт портфолио.")
+			div.person
+				h1.person__name Гордиенко Валентин
+				h2.person__desc Личный сайт web разработчика
+			+social(' block-center')
+			+menu(0)
 
 block footer
 	+footer('wellcome')

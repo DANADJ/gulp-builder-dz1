@@ -1,6 +1,14 @@
-extends ../_template
+extends ../_template.pug
+block title
+	title Сайт-портфоли Гордиенко Валентина. Блог.
+
 block pagestyle
 	link(rel='stylesheet' href='/assets/css/blog.css')
+
 block content
+	include ../_common/_header.pug
+	include ../_sections/_top.pug
+	include ../_sections/_sidebar.pug
+	include ../_sections/_articles.pug
 block footer
 	+footer('')

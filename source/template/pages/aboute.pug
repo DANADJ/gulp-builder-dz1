@@ -1,6 +1,16 @@
-extends ../_template
+extends ../_template.pug
+
+block title
+	title Сайт-портфоли Гордиенко Валентина. Обо мне.
+
 block pagestyle
-	link(rel='stylesheet' href='/assets/css/abouteme.css')
+	link(rel='stylesheet' href='/assets/css/aboute.css')
+
 block content
+	include ../_common/_header.pug
+	include ../_sections/_top.pug
+	include ../_sections/_abouteme.pug
+	include ../_sections/_contact.pug
+
 block footer
 	+footer('')

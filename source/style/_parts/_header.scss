@@ -1,0 +1,29 @@
+.header {
+
+	padding: 30px 0 0;
+
+	.conteiner {
+		max-width: 1600px;
+		min-height: 36px;
+		margin: 0 auto 27px;
+		padding: 0 30px;
+	}
+
+	&__menu-btn {
+		float: right;
+		border: none;
+		background-color: transparent;
+		@include sprite($hamburger);
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	&__menu {
+		display: none;
+	}
+
+	.cosial {
+		float: left;
+	}
+}

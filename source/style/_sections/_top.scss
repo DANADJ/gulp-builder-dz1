@@ -1,0 +1,56 @@
+.top {
+	position: relative;
+
+	.conteiner {
+		position: relative;
+		min-height: 600px;
+		padding-top: 60px;
+
+		.circle-photo {
+			margin-bottom: 26px;
+		}
+
+		.person {
+			margin-bottom: 0;
+
+			&__name {
+				font-size: 35px
+			}
+		}
+
+		.btn-down {
+			position: absolute;
+			margin-bottom: 75px;
+			bottom: 0;
+			left: 49.25%;
+			width: 18px;
+			height: 18px;
+			border-left: 5px solid #ffffff;
+			border-bottom: 5px solid #ffffff;
+			transform: rotate(-45deg);
+			opacity: 0.7;
+			z-index: 1;
+
+			&:hover {
+				cursor: pointer;
+				opacity: 1;
+			}
+		}
+
+	}
+
+	&::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		height: 100px;
+		width: 100%;
+		background-image: linear-gradient(to right top, #0d1120 50%, transparent 50%),
+		linear-gradient(to left top, #0d1120 50%, transparent 50%);
+		background-position: 0 0, 100% 0;
+		background-repeat: no-repeat;
+		background-size: 51% 100%;
+		opacity: 0.75;
+	}
+}

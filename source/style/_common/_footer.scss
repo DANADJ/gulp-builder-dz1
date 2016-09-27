@@ -65,36 +65,4 @@
 			}
 		}
 	}
-
-	.social {
-		margin-bottom: 0;
-
-		&__link {
-
-			&--vk {
-
-				@include sprite($vk-hover);
-
-				&:hover {
-					@include sprite($vk);
-				}
-			}
-
-			&--gh {
-				@include sprite($gh-hover);
-
-				&:hover {
-					@include sprite($gh);
-				}
-			}
-
-			&--li {
-				@include sprite($li-hover);
-
-				&:hover {
-					@include sprite($li);
-				}
-			}
-		}
-	}
 }
