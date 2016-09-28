@@ -1,0 +1,42 @@
+.section {
+
+	&__title {
+		font: 63px sansus_webissimoregular;
+		color: #fff;
+		text-align: center;
+		text-transform: uppercase;
+
+		&--slider {
+			line-height: 167px;
+			background-color: rgba(13, 17, 32, 0.75);
+		}
+
+		&--reviews {
+			width: 400px;
+			padding: 60px 0 65px;
+			line-height: 64px;
+		}
+	}
+
+	&__sub-title {
+		font-size: 35px;
+		margin-bottom: 25px;
+
+		&:after {
+			content: '';
+			display: block;
+			width: 90px;
+			height: 20px;
+			margin: 0 auto;
+			border-bottom: 3px solid #9c9d9f;
+		}
+
+		&--color--black {
+			color: #000;
+		}
+
+		&--color--white {
+			color: #fff;
+		}
+	}
+}

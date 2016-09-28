@@ -1,0 +1,23 @@
+.reviews {
+	margin-bottom: 30px;
+
+	&__item {
+		width: 48.717949%;
+		margin-left: 20px;
+
+		&:nth-child(odd) {
+			margin-left: 0;
+		}
+	}
+
+	&__words {
+		font: 16px/26px robotoitalic;
+		text-align: center;
+		color: #fff;
+		margin-bottom: 15px;
+	}
+
+	.person__name {
+		font: 16px/24px robotobold_italic;
+	}
+}

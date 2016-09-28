@@ -1,0 +1,12 @@
+.myworks__bottom {
+	min-height: 1355px;
+	background-image: url('../img/designe/tree_night.png');
+	background-position: -540px bottom;
+
+	.conteiner {
+		width: 780px;
+	}
+}
+
+@import "section_reviews";
+@import "feedback";

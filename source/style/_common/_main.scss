@@ -32,6 +32,15 @@ ul, ol, li {
 	list-style: none;
 }
 
+/*Float blocks*/
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
 /*Сlearfix*/
 .clearfix:before, .clearfix:after {
 	content: " ";
@@ -75,6 +84,7 @@ ul, ol, li {
 	max-width: 1600px;
 	padding: 0 20px;
 	margin: 0 auto;
+	background-clip: padding-box;
 }
 
 /*Sections*/

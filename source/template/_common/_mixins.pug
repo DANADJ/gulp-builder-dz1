@@ -24,6 +24,16 @@ mixin menu-link(mod, clear)
 			li(class='list__item'+mod+'-item')
 				a.link(href=item.pageLink) #{item.pageContent}
 
+//- List of contacts
+mixin contacts()
+	ul.list
+		each obj in contacts
+			if obj.href
+				li.list__item
+					a.link(href=obj.href)= obj.content
+			else
+				li.list__item= obj.content
+
 //- Footer
 mixin footer(mod)
 	if mod == ''
@@ -36,16 +46,21 @@ mixin footer(mod)
 						+menu-link(' footer__menu', ' clearfix')
 						+social('')
 					li.footer__parts.footer__parts--cont
-						ul.list
-							li.list__item
-								a.link(href="#") danadjsanktpeterburg
-							li.list__item
-								a.link(href="#") danadj@yandex.ru
-							li.list__item
-								a.link(href="#") +7 952 277 59 51
-							li.list__item Россия, г.Санкт-Петербург
+						+contacts
 			include ../_parts/_signfooter.pug
 	else
 		footer(class="footer footer__" + mod)
 			div.conteiner
 				include ../_parts/_signfooter.pug
+
+//- Reviews
+mixin reviews()
+	ol.list.reviews.clearfix
+		each rev in reviews
+			li.list__item.left.reviews__item
+				div.circle-photo.circle-photo--reviews
+					img.circle-photo__img(src=`./assets/img/content/${rev.photo}` alt=rev.person)
+				p.reviews__words= rev.words
+				div.person
+					h2.person__name= rev.person
+					h3.person__desc= rev.desc

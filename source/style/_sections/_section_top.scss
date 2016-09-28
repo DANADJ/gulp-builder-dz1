@@ -1,4 +1,4 @@
-.top {
+.section--top {
 	position: relative;
 
 	.conteiner {
@@ -39,7 +39,7 @@
 
 	}
 
-	&::before {
+	&:before {
 		content: "";
 		position: absolute;
 		left: 0;
