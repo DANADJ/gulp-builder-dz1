@@ -46,11 +46,24 @@
 		bottom: 0;
 		height: 100px;
 		width: 100%;
-		background-image: linear-gradient(to right top, #0d1120 50%, transparent 50%),
-		linear-gradient(to left top, #0d1120 50%, transparent 50%);
 		background-position: 0 0, 100% 0;
 		background-repeat: no-repeat;
 		background-size: 51% 100%;
+	}
+}
+
+.myworks {
+	.section--top:before {
+		background-image: linear-gradient(to right top, #0d1120 50%, transparent 50%),
+		linear-gradient(to left top, #0d1120 50%, transparent 50%);
 		opacity: 0.75;
+	}
+}
+
+.aboute {
+	.section--top:before {
+		background-image: linear-gradient(to right top, #f2f0e8 50%, transparent 50%),
+		linear-gradient(to left top, #f4f5f0 50%, transparent 50%);
+		opacity: 1;
 	}
 }

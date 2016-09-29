@@ -7,10 +7,14 @@ block pagestyle
 	link(rel='stylesheet' href='/assets/css/aboute.css')
 
 block content
-	include ../_common/_header.pug
-	include ../_sections/_top.pug
-	include ../_sections/_abouteme.pug
-	include ../_sections/_contact.pug
+	div.wrapper.aboute
+		include ../_common/_header.pug
+		include ../_sections/_top.pug
+		div.aboute__middle
+			div.conteiner.clearfix
+				include ../_sections/_me.pug
+				include ../_sections/_myskills.pug
+		include ../_sections/_contact.pug
 
 block footer
 	+footer('')

@@ -1,0 +1,15 @@
+.section-me {
+	width: 50%;
+	padding: 0 80px 24px;
+
+	.photo {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	&__words {
+		font: 16px/24px robotoregular;
+		color: #474b57;
+		margin-bottom: 20px;
+	}
+}
