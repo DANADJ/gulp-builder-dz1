@@ -1,0 +1,44 @@
+.section--articles {
+	width: 810px;
+}
+
+.article {
+	margin: 0 115px 0 20px;
+
+	.section__sub-title:after {
+		display: none;
+	}
+
+	&__title {
+		color: #455a64;
+		text-align: left;
+	}
+
+	&__date, &__paragraf {
+		font: 16px robotoregular;
+	}
+
+	&__date {
+		color: #455a64;
+		margin-bottom: 15px;
+	}
+
+	&__paragraf {
+		line-height: 26px;
+		margin-bottom: 22px;
+	}
+
+	&:after {
+		content: '';
+		display: block;
+		width: 100%;
+		height: 5px;
+		background-color: #ecebe4;
+		margin: 70px 0;
+	}
+
+	&:last-child:after {
+		height: 0;
+		margin: 0 0 70px;
+	}
+}

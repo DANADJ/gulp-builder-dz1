@@ -4,8 +4,18 @@
 @import "../_parts/_person";
 @import "../_parts/_socicon";
 @import "../_parts/_menu";
+@import "../_sections/section_sidebar";
+@import "../_sections/section_articles";
 @import "../_parts/_signfooter";
 
 body {
 	background-color: #000069;
+}
+
+.blog__middle {
+	background-color: #faf8f0;
+}
+
+.articles {
+	padding-top: 110px;
 }

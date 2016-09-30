@@ -6,9 +6,13 @@ block pagestyle
 	link(rel='stylesheet' href='/assets/css/blog.css')
 
 block content
-	include ../_common/_header.pug
-	include ../_sections/_top.pug
-	include ../_sections/_sidebar.pug
-	include ../_sections/_articles.pug
+	div.wrapper.blog
+		include ../_common/_header.pug
+		include ../_sections/_top_blog.pug
+		div.blog__middle
+			div.articles.clearfix
+				include ../_sections/_sidebar.pug
+				include ../_sections/_articles.pug
+			div.empty
 block footer
 	+footer('')
