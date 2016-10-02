@@ -1,4 +1,4 @@
-.section--top {
+.section-top {
 	position: relative;
 	color: #ffffff;
 
@@ -55,7 +55,7 @@
 }
 
 .myworks {
-	.section--top:before {
+	.section-top:before {
 		background-image: linear-gradient(to right top, #0d1120 50%, transparent 50%),
 		linear-gradient(to left top, #0d1120 50%, transparent 50%);
 		opacity: 0.75;
@@ -63,13 +63,9 @@
 }
 
 .aboute {
-	.section--top:before {
+	.section-top:before {
 		background-image: linear-gradient(to right top, #f2f0e8 50%, transparent 50%),
 		linear-gradient(to left top, #f4f5f0 50%, transparent 50%);
 		opacity: 1;
 	}
-}
-
-.blog {
-
 }

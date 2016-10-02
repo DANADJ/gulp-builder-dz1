@@ -1,0 +1,29 @@
+.reviews {
+	margin-bottom: 30px;
+
+	&__item {
+		width: 48.717949%;
+		margin-left: 20px;
+
+		&:nth-child(odd) {
+			margin-left: 0;
+		}
+
+		.circle-photo {
+			width: 76px;
+			height: 76px;
+			margin-bottom: 18px;
+		}
+	}
+
+	.text {
+		font-family: robotoitalic;
+		line-height: 26px;
+		margin-bottom: 15px;
+		text-align: center;
+	}
+
+	.person__name {
+		font: 16px/24px robotobold_italic;
+	}
+}

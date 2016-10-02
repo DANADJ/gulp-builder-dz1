@@ -1,4 +1,4 @@
-.section__slider {
+.section-slider {
 
 	.conteiner {
 		height: 750px;
@@ -6,6 +6,10 @@
 		background-color: #f2f0e8;
 	}
 
+	.title {
+		line-height: 167px;
+		background-color: rgba(13, 17, 32, 0.75);
+	}
 }
 
 @import "../_parts/_slider";

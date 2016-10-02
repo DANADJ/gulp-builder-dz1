@@ -9,20 +9,22 @@
 @import "../_sections/_section_contacts";
 @import "../_parts/_signfooter";
 
-body {
-	background-color: #000069;
-}
 
 .aboute {
 
 	&__middle {
 		background-image: linear-gradient(to right, #f2f0e8 50%, #f4f5f0 50%);
 		background-size: 100%;
+		color: #474b57;
 
 		.conteiner {
 			max-width: 1200px;
-			padding: 0;
-			margin: 0 auto;
+			padding-right: 0;
+		}
+
+		.text {
+			font-family: robotoregular;
+			line-height: 24px;
 		}
 	}
 }

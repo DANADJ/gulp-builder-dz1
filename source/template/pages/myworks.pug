@@ -1,7 +1,7 @@
 extends ../_template.pug
 
 block title
-	title Сайт-портфоли Гордиенко Валентина. Мои работы.
+	title Сайт-портфолио. Гордиенко Валентин. Мои работы.
 
 block pagestyle
 	link(rel='stylesheet' href='/assets/css/myworks.css')
@@ -10,10 +10,10 @@ block content
 	div.wrapper.myworks
 		include ../_parts/_bg-video.pug
 		include ../_common/_header.pug
-		include ../_sections/_top.pug
-		include ../_sections/_slider.pug
+		include ../_sections/_section-top.pug
+		include ../_sections/_section-slider.pug
 		div.myworks__bottom
-			include ../_sections/_reviews.pug
-			include ../_sections/_feedback.pug
+			include ../_sections/_section-reviews.pug
+			include ../_sections/_section-feedback.pug
 block footer
 	+footer('')

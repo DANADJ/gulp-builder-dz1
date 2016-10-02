@@ -1,6 +1,6 @@
 @import "../_parts/_inputs";
 
-.section--feedback {
+.section-feedback {
 	width: 380px;
 	margin: 0 auto;
 	padding: 37px 0 0;
@@ -9,13 +9,20 @@
 
 .feedback-form {
 
-	.section__title {
-		font-size: 35px;
+	.title {
 		margin-bottom: 30px;
 	}
 
 	.feedback__inputs {
 		padding: 0 20px;
+	}
+
+	.button {
+		width: 50%;
+	}
+
+	[type = "reset"] {
+		background: none;
 	}
 
 	&__input, &__textarea {
@@ -26,19 +33,10 @@
 		background-color: rgba(255, 255, 255, 0.07);
 		padding: 15px;
 		color: #fff;
-		font: 16px robotoregular;
+		font-family: robotoregular;
 	}
 
 	&__textarea {
 		height: 130px;
-	}
-
-	&__button {
-		width: 50%;
-
-
-		&--blue {
-			background-color: #004cd1;
-		}
 	}
 }

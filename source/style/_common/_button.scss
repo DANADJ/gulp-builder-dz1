@@ -25,12 +25,4 @@
 		background: none;
 		z-index: 1;
 	}
-
-	&__slider {
-		width: 200px;
-		margin: 0 auto;
-		padding-left: 45px;
-		@include sprite-image($link);
-		background-position: 17px -61px;
-	}
 }

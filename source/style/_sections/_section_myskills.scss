@@ -2,13 +2,11 @@
 	width: 50%;
 	padding-top: 8px;
 
-	.section__title {
+	.title {
 		width: 300px;
 	}
 
-	&__words {
-		font: 16px/24px robotoregular;
-		color: #474b57;
+	.text {
 		margin-bottom: 45px;
 		padding: 0 20px 0 35px;
 	}
@@ -16,9 +14,9 @@
 
 .skills-list {
 	
-	&__activities {
+	&__activitie {
 		font: 28px/32px robotomedium;
-		margin: 0 10px 0 38px;
+		margin: 0 0 0 38px;
 	}
 }
 
@@ -31,16 +29,12 @@
 		float: left;
 		width: 110px;
 		height: 110px;
-		margin: 0 0 35px 36px;
+		margin: 0 28px 35px 0;
 		padding: 20px;
 		border-radius: 50%;
 		background-color: #0066bb;
 		font: 13px/14px robotomedium;
 		color: #fff;
 		text-align: center;
-
-		&:nth-child(4n+1) {
-			margin-left: 0;
-		}
 	}
 }

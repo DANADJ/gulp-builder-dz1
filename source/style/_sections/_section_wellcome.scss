@@ -1,7 +1,13 @@
-.section--wellcome {
-	position: relative;
+.section-wellcome {
+
 	height: 100%;
 	color: #fff;
+
+	.home {
+		width: 380px;
+		padding-top: 40px;
+		background-color: rgba(69, 90, 100, 0.51);
+	}
 
 	.circle-photo {
 		margin-bottom: 13px;
@@ -29,6 +35,131 @@
 			&:last-child {
 				display: none;
 			}
+		}
+	}
+
+	.social {
+		margin-bottom: 35px;
+	}
+
+	.login{
+		position: relative;
+		width: 380px;
+		padding-top: 30px;
+		background-color: rgba(69, 90, 100, 0.51);
+
+		.section__sub-title {
+			margin-bottom: 35px;
+
+			&:after {
+				display: none;
+			}
+		}
+
+		&__inputs {
+			padding: 0 20px;
+			width: 100%;
+		}
+
+		.login__input {
+			width: 100%;
+			padding: 0 10px 0 65px;
+			background-color: #fff;
+			height: 42px;
+			margin-bottom: 23px;
+			color: #373e42;
+			font-family: robotoregular;
+
+			&--name {
+				background-image: url("../img/designe/iconspritepng.png");
+				@include sprite-position($login);
+			}
+
+			&--key {
+				background-image: url("../img/designe/iconspritepng.png");
+				@include sprite-position($key);
+			}
+		}
+
+		&__checkbox {
+			position: absolute;
+			left: -10000px;
+
+			&:checked + .login__fake-checkbox {
+				@include sprite-position($check);
+			}
+		}
+
+		&__fake-checkbox {
+			display: inline-block;
+			vertical-align: top;
+			@include sprite($uncheck);
+		}
+
+		&__checkbox-title {
+			display: inline-block;
+			height: 22px;
+			line-height: 22px;
+			margin-left: 5px;
+			vertical-align: top;
+		}
+
+		&__radio-title {
+			font: 16px/24px robotobold;
+			margin-bottom: 7px;
+		}
+
+		&__radio {
+			position: absolute;
+			left: -10000px;
+
+			&:checked + .login__fake-radio {
+				@include sprite($check-radio);
+			}
+		}
+
+		&__radio-answer {
+			height: 20px;
+			line-height: 20px;
+		}
+
+		&__radio-answer-title {
+			display: inline-block;
+			height: 20px;
+			margin: 1px 0 0 10px;
+			line-height: 20px;
+			vertical-align: top;
+		}
+
+		&__fake-radio {
+			display: inline-block;
+			vertical-align: top;
+			@include sprite($uncheck-radio);
+			margin: 0 0 0 35px;
+
+			&--first {
+				margin-left: 5px;
+			}
+		}
+
+		.buttons {
+			width: 100%;
+		}
+
+		.button {
+			width: 50%;
+		}
+	}
+
+	.input-group {
+
+		&__checkbox {
+			height: 22px;
+			margin-bottom: 15px;
+		}
+
+		&__radio {
+			margin-bottom: 25px;
 		}
 	}
 }

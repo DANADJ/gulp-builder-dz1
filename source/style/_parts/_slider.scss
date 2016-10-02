@@ -2,85 +2,85 @@
 	min-width: 100%;
 	min-height: 100%;
 	height: 100%;
+	color: #474b57;
+
+	.title {
+		background: none;
+		line-height: 41px;
+	}
+
+	.button {
+		width: 200px;
+		margin: 0 auto;
+		padding-left: 45px;
+		@include sprite-image($link);
+		background-position: 17px -61px;
+	}
 
 	&__item {
 		width: 50%;
+	}
 
-		&--list, &--images {
-			height: 100%;
+	&__buttons {
+		width: 100%;
+		height: 30%;
+	}
+
+	&__button {
+		height: 100%;
+		background-color: #000000;
+		opacity: 0.5;
+
+		&:hover {
+			cursor: pointer;
+			opacity: 0.75;
 		}
 
-		&--img--main {
-			width: 100%;
-			height: 70%;
-			background-color: #e3e2de;
+		&--down, &--up {
+			position: relative;
+
+			&:before {
+				content: '';
+				display: inline-block;
+				position: absolute;
+				width: 18px;
+				height: 18px;
+				border-left: 5px solid #ffffff;
+				border-bottom: 5px solid #ffffff;
+				opacity: 0.7;
+			}
 		}
 
-		&--buttons {
-			width: 100%;
-			height: 30%;
+		&--down {
+
+			&:before {
+				transform: rotate(-45deg);
+				top: 48%;
+				left: 49.25%;
+			}
 		}
 
-		&--button {
-			height: 100%;
-			background-color: #000000;
-			opacity: 0.5;
+		&--up {
 
-			&:hover {
-				cursor: pointer;
-				opacity: 0.75;
-			}
-
-			&--down, &--up {
-				position: relative;
-
-				&:before {
-					content: '';
-					display: inline-block;
-					position: absolute;
-					width: 18px;
-					height: 18px;
-					border-left: 5px solid #ffffff;
-					border-bottom: 5px solid #ffffff;
-					opacity: 0.7;
-				}
-			}
-
-			&--down {
-
-				&:before {
-					transform: rotate(-45deg);
-					top: 48%;
-					left: 49.25%;
-				}
-			}
-
-			&--up {
-
-				&:before {
-					transform: rotate(135deg);
-					top: 52%;
-					left: 49.25%;
-				}
+			&:before {
+				transform: rotate(135deg);
+				top: 52%;
+				left: 49.25%;
 			}
 		}
 	}
 
-	&__list {
-		position: relative;
-		text-align: center;
+	&__item-list, &__item-images {
+		height: 100%;
+	}
 
-		&:before {
-			content: "";
-			display: inline-block;
-			vertical-align: middle;
-			height: 100%;
-		}
+	&__main-img {
+		width: 100%;
+		height: 70%;
+		background-color: #e3e2de;
 	}
 
 	&__list-item {
-		display: inline-block;
-		vertical-align: middle;
 		max-width: 320px;
 		text-align: center;
 	}
@@ -89,5 +89,9 @@
 		font: 16px robotomedium;
 		color: #083c96;
 		margin-bottom: 55px;
+	}
+
+	&__description-item {
+		display: inline-block;
 	}
 }

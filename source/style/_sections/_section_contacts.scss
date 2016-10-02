@@ -9,28 +9,21 @@
 }
 
 .contacts {
-	position: absolute;
-	margin: auto;
 	padding: 25px 0 0;
-	top: 0;
-	bottom: 0;
-	right: 0;
-	left: 0;
 	width: 580px;
 	height: 280px;
+	color: #474b57;
 	background-color: rgba(255, 255, 255, 0.71);
 
 	.contacts-list {
 
 		&__item {
-			display: block;
-			float: left;
 			width: 50%;
 			height: 50px;
 			padding: 15px 10px 15px 70px;
 			margin: 0 0 25px;
-			font: 16px/24px robotomedium;
-			color: #474b57;
+			font-family: robotomedium;
+			line-height: 24px;
 			background-image: url("../img/designe/iconspritepng.png");
 
 			.link {

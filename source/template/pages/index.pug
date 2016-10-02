@@ -8,18 +8,18 @@ block pagestyle
 block content
 	include ../_parts/_bg-video.pug
 	div.mountain
-	div.section.section--wellcome
+	div.section.section-wellcome.vertical-align-center__parent
 		a.button.link.button__login.background-none(href="#login") Авторизоваться
-		section.modal-window.block-center.home#home
+		section.block-center.home.vertical-align-center__child#home
 			div.circle-photo
 				a.link.link-img(href="./")
-					img.img.circle-photo__img--me(src="./assets/img/content/me.jpg" alt="Гордиенко Валентин. Сайт портфолио.")
+					img.img(src="./assets/img/content/me.jpg" alt="Гордиенко Валентин. Сайт портфолио.")
 			div.person
 				h1.person__name Гордиенко Валентин
 				h2.person__desc Личный сайт web разработчика
 			+social(' block-center')
 			+menu(0)
-		form.modal-window.block-center.login.hide#login
+		form.block-center.login.vertical-align-center__child.hide#login
 			h2.section__title.section__sub-title.login__title Авторизуйтесь
 			div.login__inputs
 				input.input.login__input.login__input--name(type="text" placeholder="Логин")
@@ -38,8 +38,8 @@ block content
 						label.login__fake-radio(for="notSure")
 						span.login__radio-answer-title Не уверен
 			div.buttons.clearfix
-				a.button.left.login__button(href="#home") На главную
-				button.button.left.login__button(type="submit") Войти
+				a.button.link.left(href="#home") На главную
+				button.button.left(type="submit") Войти
 
 
 block footer

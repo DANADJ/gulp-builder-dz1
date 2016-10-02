@@ -1,7 +1,7 @@
 extends ../_template.pug
 
 block title
-	title Сайт-портфоли Гордиенко Валентина. Обо мне.
+	title Сайт-портфолио. Гордиенко Валентин. Обо мне.
 
 block pagestyle
 	link(rel='stylesheet' href='/assets/css/aboute.css')
@@ -10,12 +10,12 @@ block content
 	div.wrapper.aboute
 		include ../_parts/_bg-video.pug
 		include ../_common/_header.pug
-		include ../_sections/_top.pug
+		include ../_sections/_section-top.pug
 		div.aboute__middle
 			div.conteiner.clearfix
-				include ../_sections/_me.pug
-				include ../_sections/_myskills.pug
-		include ../_sections/_contact.pug
+				include ../_sections/_section-me.pug
+				include ../_sections/_sections-myskills.pug
+		include ../_sections/_section-contacts.pug
 
 block footer
 	+footer('')

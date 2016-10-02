@@ -25,14 +25,14 @@ mixin menu-link(mod, clear)
 				a.link(href=item.pageLink) #{item.pageContent}
 
 //- List of contacts
-mixin contacts(mod,modlist)
-	ul.list(class=mod)
+mixin contacts(mod)
+	ul.list-line(class=mod)
 		each obj in contacts
 			if obj.href
-				li.list__item(class=modlist)
+				li.list-line__item(class=mod+'__item')
 					a.link(href=obj.href)= obj.content
 			else
-				li.list__item(class=modlist)= obj.content
+				li.list-line__item(class=mod+'__item')= obj.content
 
 //- Footer
 mixin footer(mod)
@@ -55,12 +55,12 @@ mixin footer(mod)
 
 //- Reviews
 mixin reviews()
-	ol.list.reviews.clearfix
+	ol.reviews.clearfix
 		each rev in reviews
-			li.list__item.left.reviews__item
-				div.circle-photo.circle-photo--reviews
-					img.circle-photo__img(src=`./assets/img/content/${rev.photo}` alt=rev.person)
-				p.reviews__words= rev.words
+			li.left.reviews__item
+				div.circle-photo
+					img.img(src=`./assets/img/content/${rev.photo}` alt=rev.person)
+				p.text= rev.words
 				div.person
 					h3.person__name= rev.person
 					h4.person__desc= rev.desc
