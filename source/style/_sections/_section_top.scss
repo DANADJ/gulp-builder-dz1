@@ -1,5 +1,6 @@
 .section--top {
 	position: relative;
+	color: #ffffff;
 
 	.conteiner {
 		position: relative;
@@ -14,7 +15,8 @@
 			margin-bottom: 0;
 
 			&__name {
-				font-size: 35px
+				font-size: 35px;
+				line-height: 35px;
 			}
 		}
 
@@ -69,22 +71,5 @@
 }
 
 .blog {
-	.section--top{
 
-		.conteiner {
-			min-height: 310px;
-			padding-top: 0;
-			margin-top: -10px;
-		}
-
-		.circle-photo {
-			margin-bottom: 16px;
-		}
-	}
-
-	.section--top:before {
-		background-image: linear-gradient(to right top, #faf8f0 50%, transparent 50%),
-		linear-gradient(to left top, #faf8f0 50%, transparent 50%);
-		opacity: 1;
-	}
 }

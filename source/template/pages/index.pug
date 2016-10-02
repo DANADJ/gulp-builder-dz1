@@ -6,17 +6,20 @@ block pagestyle
 	link(rel='stylesheet' href='/assets/css/index.css')
 
 block content
+	include ../_parts/_bg-video.pug
+	div.mountain
 	div.section.section--wellcome
-		a.btn-link.btn-link--auth(href="./login.html") Авторизоваться
-		section.modal-window.block-center
+		a.button.link.button__login.background-none(href="#login") Авторизоваться
+		section.modal-window.block-center.home#home
 			div.circle-photo
-				img.circle-photo__img.circle-photo__img--me(src="./assets/img/content/me.jpg" alt="Гордиенко Валентин. Сайт портфолио.")
+				a.link.link-img(href="./")
+					img.img.circle-photo__img--me(src="./assets/img/content/me.jpg" alt="Гордиенко Валентин. Сайт портфолио.")
 			div.person
 				h1.person__name Гордиенко Валентин
 				h2.person__desc Личный сайт web разработчика
 			+social(' block-center')
 			+menu(0)
-		form.modal-window.block-center.login.hide
+		form.modal-window.block-center.login.hide#login
 			h2.section__title.section__sub-title.login__title Авторизуйтесь
 			div.login__inputs
 				input.input.login__input.login__input--name(type="text" placeholder="Логин")
@@ -35,7 +38,7 @@ block content
 						label.login__fake-radio(for="notSure")
 						span.login__radio-answer-title Не уверен
 			div.buttons.clearfix
-				button.button.left.login__button(type="button") На главную
+				a.button.left.login__button(href="#home") На главную
 				button.button.left.login__button(type="submit") Войти
 
 

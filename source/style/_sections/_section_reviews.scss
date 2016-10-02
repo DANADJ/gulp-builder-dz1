@@ -8,6 +8,12 @@
 		&:nth-child(odd) {
 			margin-left: 0;
 		}
+
+		.circle-photo {
+			width: 76px;
+			height: 76px;
+			margin-bottom: 18px;
+		}
 	}
 
 	&__words {

@@ -7,45 +7,26 @@
 	border-radius: 0;
 	background: none;
 	font: 16px/21px robotomedium;
-	color: #fff;
+	color: #ffffff;
 	text-align: center;
-	cursor: pointer;
 	background-color: #004cd1;
-
-	&--bg--none {
-		background: none;
-	}
-}
-
-.btn-link {
-	display: block;
-	box-sizing: border-box;
-	text-decoration: none;
-	border: none;
-	padding: 12px 20px;
-	color: #fff;
-	text-align: center;
-	font: 16px/21px robotomedium;
 
 	&:hover {
 		cursor: pointer;
+		background-color: #043ea3;
 	}
 
-	&--auth {
+	&__login {
 		position: absolute;
 		top: 24px;
 		right: 20px;
 		width: 180px;
-		border: 1px solid #fff;
+		border: 1px solid #ffffff;
+		background: none;
 		z-index: 1;
-
-		&:hover {
-			background-color: #043ea3;
-		}
 	}
 
-	&--slider {
-		background-color: #004cd1;
+	&__slider {
 		width: 200px;
 		margin: 0 auto;
 		padding-left: 45px;

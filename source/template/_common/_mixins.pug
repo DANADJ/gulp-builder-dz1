@@ -12,11 +12,11 @@ mixin menu(activePage)
 	ul.menu#menu
 		each item in navigation
 			if item.pageNumber != activePage
-				li.menu__item.btn
-					a.btn-link(href=item.pageLink) #{item.pageContent}
+				li.menu__item
+					a.button.link(href=item.pageLink) #{item.pageContent}
 			else
-				li.menu__item.btn
-					a.btn-link.btn-link__active-page(href=item.pageLink) #{item.pageContent}
+				li.menu__item
+					a.button.link.button__active-page(href=item.pageLink) #{item.pageContent}
 //- Menu link
 mixin menu-link(mod, clear)
 	ul(class='list'+mod+clear)
