@@ -1,6 +1,6 @@
 extends ../_template.pug
 block title
-	title Сайт-портфоли Гордиенко Валентина. Страница приветствия.
+	title Сайт-портфоли Гордиенко Валентина. Главная страница.
 
 block pagestyle
 	link(rel='stylesheet' href='/assets/css/index.css')
@@ -10,7 +10,7 @@ block content
 	div.mountain
 	div.section.section-wellcome.vertical-align-center__parent
 		a.button.link.button__login.background-none(href="#login") Авторизоваться
-		section.block-center.home.vertical-align-center__child#home
+		section.block-center.home.vertical-align-center__child.hide#home
 			div.circle-photo
 				a.link.link-img(href="./")
 					img.img(src="./assets/img/content/me.jpg" alt="Гордиенко Валентин. Сайт портфолио.")
@@ -19,28 +19,28 @@ block content
 				h2.person__desc Личный сайт web разработчика
 			+social(' block-center')
 			+menu(0)
-		form.block-center.login.vertical-align-center__child.hide#login
-			h2.section__title.section__sub-title.login__title Авторизуйтесь
+		form.block-center.login.vertical-align-center__child#login
+			h2.title.font-sixe--35 Авторизуйтесь
 			div.login__inputs
-				input.input.login__input.login__input--name(type="text" placeholder="Логин")
-				input.input.login__input.login__input--key(type="text" placeholder="Пароль")
-				div.input-group.input-group__checkbox
-					input.login__checkbox#remember-me(name="remember-me" type="checkbox")
-					label.login__fake-checkbox(for="remember-me")
-					span.login__checkbox-title Я человек
-				div.input-group.input-group__radio
-					p.login__radio-title Вы точно не робот?
-					p.login__radio-answer
-						input.input.login__radio#sure(type="radio" name="areYouShure" value="sure")
-						label.login__fake-radio.login__fake-radio--first(for="sure")
-						span.login__radio-answer-title Да
-						input.input.login__radio#notSure(type="radio" name="areYouShure" value="notSure")
-						label.login__fake-radio(for="notSure")
-						span.login__radio-answer-title Не уверен
+				input.input.input--name(type="text" placeholder="Логин" name="name")
+				input.input.input--key(type="password" placeholder="Пароль" name="key")
+				div.login__checkbox-block.clearfix
+					input.checkbox#remember-me(name="remember-me" type="checkbox")
+					label.checkbox-fake(for="remember-me")
+					p.checkbox-title Я человек
+				div.login__radio-block
+					p.radio-block__title Вы точно не робот?
+					ul.list-line.radio-block__buttons
+						li.list-line__item.radio-button.clearfix
+							input.radio#sure(type="radio" name="areYouShure" value="sure")
+							label.radio-fake(for="sure")
+							p.radio-title Да
+						li.list-line__item.radio-button.clearfix
+							input.radio#notSure(type="radio" name="areYouShure" value="notSure")
+							label.radio-fake(for="notSure")
+							p.radio-title Не уверен
 			div.buttons.clearfix
 				a.button.link.left(href="#home") На главную
 				button.button.left(type="submit") Войти
-
-
 block footer
 	+footer('wellcome')

@@ -6,7 +6,7 @@ module.exports = function () {
 			.pipe($.gp.spritesmith({
 				imgName: 'iconspritepng.png',
 				imgPath: '../img/designe/iconspritepng.png',
-				cssName: '_icon-sprite-png.scss',
+				cssName: '_iconspritepng.scss',
 				padding: 20,
 				algorithm: 'top-down'
 			}));
