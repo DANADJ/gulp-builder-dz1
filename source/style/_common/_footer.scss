@@ -13,7 +13,9 @@
 	opacity: 0.85;
 	font: 16px/21px robotolight;
 
-	&__bg {
+	.text {font-size: 16px}
+
+	&--with-background {
 		background-color: #1c1f29;
 	}
 
@@ -41,6 +43,10 @@
 
 	.link {
 		color: #fff;
+
+		&:hover {
+			color: #004cd1;
+		}
 	}
 
 	&__menu {

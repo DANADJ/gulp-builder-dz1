@@ -2,14 +2,14 @@
 	position: relative;
 	color: #ffffff;
 
+	.circle-photo {
+		margin-bottom: 26px;
+	}
+
 	.conteiner {
 		position: relative;
 		min-height: 600px;
 		padding-top: 60px;
-
-		.circle-photo {
-			margin-bottom: 26px;
-		}
 
 		.person {
 			margin-bottom: 0;
@@ -62,7 +62,7 @@
 	}
 }
 
-.aboute {
+.about {
 	.section-top:before {
 		background-image: linear-gradient(to right top, #f2f0e8 50%, transparent 50%),
 		linear-gradient(to left top, #f4f5f0 50%, transparent 50%);

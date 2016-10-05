@@ -1,16 +1,16 @@
 @import "../_common/_iconspritepng";
 @import "../_parts/_header";
-@import "../_sections/section_top";
+@import "../_sections/section-top";
 @import "../_parts/_person";
 @import "../_parts/_socicon";
 @import "../_parts/_menu";
-@import "../_sections/_section_me";
-@import "../_sections/_section_myskills";
-@import "../_sections/_section_contacts";
+@import "../_sections/section-me";
+@import "../_sections/section-myskills";
+@import "../_sections/section-contacts";
 @import "../_parts/_signfooter";
 
 
-.aboute {
+.about {
 
 	&__middle {
 		background-image: linear-gradient(to right, #f2f0e8 50%, #f4f5f0 50%);
@@ -19,12 +19,16 @@
 
 		.conteiner {
 			max-width: 1200px;
-			padding-right: 0;
+			padding: 0;
 		}
 
 		.text {
 			font-family: robotoregular;
 			line-height: 24px;
+		}
+
+		.sub-title:after {
+			height: 8px;
 		}
 	}
 }

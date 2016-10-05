@@ -25,27 +25,36 @@ mixin menu-link(mod, clear)
 				a.link(href=item.pageLink) #{item.pageContent}
 
 //- List of contacts
-mixin contacts(mod)
-	ul.list-line(class=mod)
-		each obj in contacts
-			if obj.href
-				li.list-line__item(class=mod+'__item')
-					a.link(href=obj.href)= obj.content
-			else
-				li.list-line__item(class=mod+'__item')= obj.content
+mixin contacts(mod, line)
+	if line
+		ul.list-line(class=mod)
+			each obj in contacts
+				if obj.href
+					li.list-line__item(class=mod+'__item')
+						a.link(href=obj.href)= obj.content
+				else
+					li.list-line__item(class=mod+'__item')= obj.content
+	else
+		ul
+			each obj in contacts
+				if obj.href
+					li
+						a.link(href=obj.href)= obj.content
+				else
+					li= obj.content
 
 //- Footer
 mixin footer(mod)
 	if mod == ''
-		footer.footer.footer__bg
+		footer.footer.footer--with-background
 			div.conteiner
 				ol.footer__main.clearfix
-					li.footer__parts.footer__parts--desc
-						h4 Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
-					li.footer__parts.footer__parts--links
+					li.footer__parts
+						h3.text Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
+					li.footer__parts
 						+menu-link(' footer__menu', ' clearfix')
 						+social('')
-					li.footer__parts.footer__parts--cont
+					li.footer__parts
 						+contacts
 			include ../_parts/_signfooter.pug
 	else
@@ -64,3 +73,12 @@ mixin reviews()
 				div.person
 					h3.person__name= rev.person
 					h4.person__desc= rev.desc
+
+//- Skills
+mixin skills
+	ol.skills-list
+		each val, index in skills
+			li.list-item.skills-list__activities= val.name
+				ul.list-line.clearfix.technologies-list
+					each skill in val.skills
+						li.list-line__item.technologies-list__item= skill

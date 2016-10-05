@@ -1,11 +1,11 @@
 @import "../_common/_iconspritepng";
 @import "../_parts/_header";
-@import "../_sections/section_top";
+@import "../_sections/section-top";
 @import "../_parts/_person";
 @import "../_parts/_socicon";
 @import "../_parts/_menu";
-@import "../_sections/section_sidebar";
-@import "../_sections/section_articles";
+@import "../_sections/section-sidebar";
+@import "../_sections/section-articles";
 @import "../_parts/_signfooter";
 
 .blog__middle {
@@ -21,11 +21,11 @@
 	bottom: -267px;
 }
 
-.circle-photo {
-	margin-bottom: 16px;
-}
-
 .section-top {
+
+	.circle-photo {
+		margin-bottom: 16px;
+	}
 
 	.conteiner {
 		min-height: 310px;

@@ -10,7 +10,7 @@ block content
 	div.mountain
 	div.section.section-wellcome.vertical-align-center__parent
 		a.button.link.button__login.background-none(href="#login") Авторизоваться
-		section.block-center.home.vertical-align-center__child.hide#home
+		section.block-center.home.vertical-align-center__child#home
 			div.circle-photo
 				a.link.link-img(href="./")
 					img.img(src="./assets/img/content/me.jpg" alt="Гордиенко Валентин. Сайт портфолио.")
@@ -19,7 +19,7 @@ block content
 				h2.person__desc Личный сайт web разработчика
 			+social(' block-center')
 			+menu(0)
-		form.block-center.login.vertical-align-center__child#login
+		form.block-center.login.vertical-align-center__child.hide#login
 			h2.title.font-sixe--35 Авторизуйтесь
 			div.login__inputs
 				input.input.input--name(type="text" placeholder="Логин" name="name")
