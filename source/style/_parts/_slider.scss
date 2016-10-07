@@ -19,14 +19,19 @@
 
 	&__item {
 		width: 50%;
+		float: right;
+
+		&:nth-child(2){
+			float: left;
+		}
 	}
 
 	&__buttons {
-		width: 100%;
 		height: 30%;
 	}
 
 	&__button {
+		width: 50%;
 		height: 100%;
 		background-color: #000000;
 		opacity: 0.5;
@@ -70,12 +75,11 @@
 		}
 	}
 
-	&__item-list, &__item-images {
+	&__item-list {
 		height: 100%;
 	}
 
 	&__main-img {
-		width: 100%;
 		height: 70%;
 		background-color: #e3e2de;
 	}

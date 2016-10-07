@@ -1,7 +1,6 @@
 .myworks__bottom {
 	min-height: 1355px;
-	background-image: url('../img/designe/tree_night.png');
-	background-position: -540px bottom;
+	background-repeat: no-repeat, no-repeat;
 
 	.conteiner {
 		width: 780px;
@@ -10,3 +9,163 @@
 
 @import "section-reviews";
 @import "section-feedback";
+
+@media screen and (min-width: 1801px) {
+	.myworks__bottom {
+		background-image: url('../img/designe/lighthouse-853.png'), url('../img/designe/tree-night-1800.jpg');
+		background-position: right bottom, left bottom;
+		background-size: auto, cover;
+	}
+}
+
+@media screen and (max-width: 1800px) {
+	.myworks__bottom {
+		background-image: url('../img/designe/lighthouse-853.png'), url('../img/designe/tree-night-1800.jpg');
+		background-position: 910px bottom, left bottom;
+	}
+}
+
+@media screen and (max-width: 1660px) {
+	.myworks__bottom {
+		background-position: 910px bottom, -100px bottom;
+	}
+}
+
+@media screen and (max-width: 1500px) {
+	.myworks__bottom {
+		background-image: url('../img/designe/lighthouse-590.png'), url('../img/designe/tree-night-1800.jpg');
+		background-position: right bottom, -200px bottom;
+	}
+}
+
+@media screen and (max-width: 1260px) {
+	.myworks__bottom {
+		background-position: right bottom, -300px bottom;
+	}
+
+	.section-slider .conteiner {
+		height: 600px;
+	}
+}
+
+@media screen and (max-width: 1050px) {
+	.myworks__bottom {
+		background-image: url('../img/designe/lighthouse-590.png'), url('../img/designe/tree-night-1800.jpg');
+		background-position: 460px bottom, -420px bottom;
+	}
+
+	.section-top {
+		.conteiner {
+			padding-top: 23px;
+			min-height: 390px;
+		}
+	}
+
+	.section-slider {
+		h2.title {
+			font-size: 44px;
+			line-height: 134px;
+		}
+	}
+
+	.section-reviews {
+
+		.title {
+			padding: 37px 0 43px;
+			line-height: 56px;
+		}
+		.font-sixe--63 {
+			font-size: 46px;
+		}
+	}
+}
+
+@media screen and (max-width: 850px) {
+	.myworks__bottom {
+		background-image: url('../img/designe/lighthouse-370.png'), url('../img/designe/tree-night-1800.jpg');
+		background-position: right bottom, -520px bottom;
+	}
+}
+
+@media screen and (max-width: 820px) {
+	.section-reviews .conteiner {
+		box-sizing: border-box;
+		width: 100%;
+	}
+
+	.reviews {
+		margin-bottom: 13px;
+
+		&__item {
+			margin-right: 18px;
+		}
+
+		.circle-photo {
+			margin-bottom: 15px;
+		}
+
+		.text {
+			font-size: 14px;
+			line-height: 24px;
+			margin-bottom: 10px;
+		}
+
+		.person__desc {
+			line-height: 16px;
+		}
+	}
+
+	.feedback-form {
+		width: 350px;
+		padding-top: 44px;
+
+		.title {
+			font-size: 30px;
+		}
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+
+	.section-slider .conteiner {
+		height: auto;
+	}
+
+	.slider {
+
+		&__item {
+			float: none;
+			width: 100%;
+		}
+
+		&__main-img {
+			height: 530px;
+		}
+
+		&__item-list {
+			min-height: 270px;
+			padding: 45px 10px 0;
+			width: 100%;
+		}
+
+		&__buttons {
+			height: 215px;
+		}
+
+		&__list-item {
+			min-width: 200px;
+			max-width: 95%;
+
+			.title {
+				font-size: 30px;
+				line-height: 30px;
+				margin-bottom: 17px;
+			}
+		}
+
+		&__description {
+			margin-bottom: 28px;
+		}
+	}
+}

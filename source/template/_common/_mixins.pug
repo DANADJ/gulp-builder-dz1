@@ -18,10 +18,10 @@ mixin menu(activePage)
 				li.menu__item
 					a.button.link.button__active-page(href=item.pageLink) #{item.pageContent}
 //- Menu link
-mixin menu-link(mod, clear)
-	ul(class='list'+mod+clear)
+mixin menu-link(mod)
+	ul(class='list-line'+mod)
 		each item in navigation
-			li(class='list__item'+mod+'-item')
+			li(class='list-line__item'+mod+'-item')
 				a.link(href=item.pageLink) #{item.pageContent}
 
 //- List of contacts
@@ -52,7 +52,7 @@ mixin footer(mod)
 					li.footer__parts
 						h3.text Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
 					li.footer__parts
-						+menu-link(' footer__menu', ' clearfix')
+						+menu-link(' footer__menu')
 						+social('')
 					li.footer__parts
 						+contacts
