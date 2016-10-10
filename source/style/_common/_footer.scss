@@ -13,7 +13,7 @@
 	opacity: 0.85;
 	font: 16px/21px robotolight;
 
-	.text {font-size: 16px}
+	.text { font-size: 16px }
 
 	&--with-background {
 		background-color: #1c1f29;
@@ -42,7 +42,7 @@
 	}
 
 	.link {
-		color: #fff;
+		color: #ffffff;
 
 		&:hover {
 			color: #004cd1;
@@ -50,7 +50,6 @@
 	}
 
 	&__menu {
-
 		margin-bottom: 40px;
 
 		.footer__menu-item {
@@ -80,7 +79,6 @@
 	}
 
 	.footer {
-
 		margin-top: -230px;
 
 		.conteiner {
@@ -132,6 +130,72 @@
 
 		&__sign {
 			font-size: 14px;
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+
+	.empty {
+		height: 320px;
+	}
+
+	.footer {
+
+		margin-top: -320px;
+
+		.conteiner {
+			box-sizing: border-box;
+		}
+
+		&__main {
+
+			.footer__parts {
+				float: none;
+				text-align: center;
+
+				&:nth-child(2) {
+					height: 76px;
+					border-bottom: 1px solid white;
+					margin-bottom: 14px;
+				}
+			}
+		}
+
+		&__menu {
+			width: 344px;
+			margin: 0 auto 15px;
+		}
+
+		&__menu-item:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 565px) {
+	.empty {
+		height: 341px;
+	}
+
+	.footer {
+		margin-top: -341px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.footer {
+
+		&__menu {
+			width: 100%;
+
+			.footer__menu-item {
+				margin-right: 10px;
+
+				&:last-child {
+					margin-right: 0;
+				}
+			}
 		}
 	}
 }

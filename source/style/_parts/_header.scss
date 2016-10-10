@@ -27,3 +27,18 @@
 		float: left;
 	}
 }
+
+@media screen and (max-width: 480px){
+	.header {
+		padding-top: 10px;
+		.conteiner {
+			box-sizing: border-box;
+			padding: 0 10px;
+			min-height: 23px;
+		}
+
+		&__menu-btn {
+			height: 23px;
+		}
+	}
+}

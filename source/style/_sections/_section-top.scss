@@ -11,15 +11,6 @@
 		min-height: 600px;
 		padding-top: 60px;
 
-		.person {
-			margin-bottom: 0;
-
-			&__name {
-				font-size: 35px;
-				line-height: 35px;
-			}
-		}
-
 		.btn-down {
 			position: absolute;
 			margin-bottom: 75px;
@@ -38,7 +29,15 @@
 				opacity: 1;
 			}
 		}
+	}
 
+	.person {
+		margin-bottom: 0;
+
+		&__name {
+			font-size: 35px;
+			line-height: 35px;
+		}
 	}
 
 	&:before {
@@ -67,5 +66,35 @@
 		background-image: linear-gradient(to right top, #f2f0e8 50%, transparent 50%),
 		linear-gradient(to left top, #f4f5f0 50%, transparent 50%);
 		opacity: 1;
+	}
+}
+
+@media screen and (max-width: 1050px) {
+	.section-top {
+		.conteiner {
+			padding-top: 23px;
+			min-height: 390px;
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.section-top {
+		.conteiner {
+			box-sizing: border-box;
+			padding-top: 55px;
+			min-height: 500px;
+		}
+
+		.person__name {
+			font-size: 21px;
+			margin-bottom: 4px;
+		}
+
+		.person__desc {
+			font-size: 14px;
+			font-family: robotolight;
+			line-height: 16px;
+		}
 	}
 }

@@ -1,14 +1,4 @@
 @import "../_common/_iconspritepng";
-@import "../_parts/_header";
-@import "../_sections/section-top";
-@import "../_parts/_person";
-@import "../_parts/_socicon";
-@import "../_parts/_menu";
-@import "../_sections/section-me";
-@import "../_sections/section-myskills";
-@import "../_sections/section-contacts";
-@import "../_parts/_signfooter";
-
 
 .about {
 
@@ -18,7 +8,7 @@
 		color: #474b57;
 
 		.conteiner {
-			max-width: 1200px;
+			max-width: 1800px;
 			padding: 0;
 		}
 
@@ -28,7 +18,40 @@
 		}
 
 		.sub-title:after {
-			height: 8px;
+			height: 20px;
 		}
 	}
 }
+
+@media screen and (max-width: 1440px) {
+	.about {
+
+		&__middle {
+
+			.conteiner {
+				max-width: 1200px;
+			}
+
+			.sub-title:after {
+				height: 8px;
+			}
+
+		}
+	}
+}
+
+@media screen and (max-width: 768px){
+	.about__middle .sub-title:after {
+		height: 11px;
+	}
+}
+
+@import "../_parts/_header";
+@import "../_sections/section-top";
+@import "../_parts/_person";
+@import "../_parts/_socicon";
+@import "../_parts/_menu";
+@import "../_sections/section-me";
+@import "../_sections/section-myskills";
+@import "../_sections/section-contacts";
+@import "../_parts/_signfooter";

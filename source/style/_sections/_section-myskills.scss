@@ -42,3 +42,38 @@
 		text-align: center;
 	}
 }
+
+@media screen and (min-height: 1440px) {
+	.technologies-list__item {
+		width: 120px;
+		height: 120px;
+		margin: 0 40px 35px 0;
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+	.section-myskills {
+		float: none;
+		width: 630px;
+
+		.title {
+			font-size: 30px;
+			width: 250px;
+			line-height: 34px;
+		}
+
+		.text {
+			margin-bottom: 35px;
+		}
+	}
+
+	.skills-list__activities {
+		text-align: center;
+		font-size: 22px;
+		margin-left: 0;
+	}
+
+	.technologies-list__item {
+	}
+}

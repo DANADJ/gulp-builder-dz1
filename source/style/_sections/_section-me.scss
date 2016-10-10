@@ -1,13 +1,21 @@
 .section-me {
 	width: 50%;
-	padding: 0 80px 24px;
+	padding: 0 20px 24px;
 
-	.title {
+	h2.title {
+		width: 48.837209%;
+		float: left;
 		margin-bottom: 45px;
 	}
 
+	.me-info-wrapper {
+		width: 51.162791%;
+		float: right;
+		padding-top: 20px;
+	}
+
 	.sub-title {
-		margin-bottom: 15px;
+		margin-bottom: 25px;
 	}
 
 	.photo {
@@ -17,5 +25,51 @@
 
 	.text {
 		margin-bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 1440px) {
+	.section-me {
+		width: 50%;
+		padding: 0 80px 24px;
+
+		h2.title {
+			float: none;
+			width: 100%;
+			margin-bottom: 45px;
+		}
+
+		.me-info-wrapper {
+			width: 100%;
+			float: none;
+			padding-top: 0;
+		}
+
+		.sub-title {
+			margin-bottom: 15px;
+		}
+
+		.photo {
+			width: 100%;
+			margin-bottom: 28px;
+		}
+
+		.text {
+			margin-bottom: 10px;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+	.section-me {
+		float: none;
+		width: 630px;
+	}
+
+	h2.title {
+		font-size: 50px;
+		line-height: 50px;
+		margin-top: 45px;
 	}
 }
