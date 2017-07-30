@@ -1,9 +1,9 @@
-#Мой новый сайт-портфолио
+# Мой новый сайт-портфолио
 
-##Stack:
+## Stack:
  - Gulp 4.0
  
-##Getting started:
+## Getting started:
 
 1. clone this repo
 2. cd path/to/
